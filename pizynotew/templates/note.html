@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0cf6fe">
+  <title>Note</title>
+  
+  <!-- HTML -->
+  
+<style type="text/css" media="all">
+  body {
+    font-size: 15pt;
+    margin: 0;
+    font-family: monospace;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #0c0023;
+  padding-top: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+header > h2 {
+  color: #0cb1fe;
+}
+
+div {
+  border: solid;
+  border-color: grey;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+h5 {
+	text-align: center;
+}
+
+</style>
+  <!-- Custom Styles -->
+</head>
+
+<body>
+  <header>
+    <h2>Peasy Notes</h2>
+  </header>
+  
+  <div>
+    <h5>
+      {{ note }}
+    </h5>
+  </div>
+</body>
+</html>

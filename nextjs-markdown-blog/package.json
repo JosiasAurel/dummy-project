@@ -1,0 +1,24 @@
+{
+  "name": "josias-blog",
+  "version": "1.0.0",
+  "description": "A blog for Josias Aurel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Josias Aurel",
+  "license": "MIT",
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "next": "^9.5.2",
+    "raw-loader": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1"
+  }
+}

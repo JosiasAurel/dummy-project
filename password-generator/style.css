@@ -1,0 +1,44 @@
+body {
+    font-size: 15pt;
+    font-family: monospace;
+}
+
+.rond {
+  border: solid;
+  border-color: transparent;
+  border-radius: 6px;
+}
+
+.ps-c {
+  border-color: grey !important;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-c {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: solid;
+  border-color: transparent;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: blue;
+}
+
+footer {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+#copy {
+  color: white;
+  border: solid;
+  border-radius: 5px;
+  background-color: #160240;
+}

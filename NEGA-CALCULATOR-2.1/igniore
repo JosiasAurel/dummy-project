@@ -1,0 +1,11 @@
+*.txt
+*.png
+*.jpg
+*.docx
+*.pyc
+*.h
+*.c
+*.cpp
+*.xml
+*.idea
+*.iml

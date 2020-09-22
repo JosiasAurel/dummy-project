@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0cf6fe">
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" type="text/css" media="all" />
+  <title>PeasyNotes</title>
+  <!-- HTML -->
+  
+<style type="text/css" media="all">
+  body {
+    font-size: 15pt;
+    margin: 0;
+    font-family: monospace;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #0c0023;
+  padding-top: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+header > h2 {
+  color: #0cb1fe;
+}
+
+form {
+  margin: 10px;
+}
+
+form > div {
+  display: flex;
+  justify-content: center;
+}
+
+div > button {
+  margin-top: 10px;
+}
+
+.card {
+  margin: 10px;
+}
+
+.btn {
+  background-color: #0c0023;
+  color: white;
+}
+
+.link {
+  background-color: grey;
+  border: solid;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.link:focus {
+  border: solid;
+  border-color: transparent;
+}
+</style>
+  <!-- Custom Styles -->
+  
+</head>
+
+<body>
+  <header>
+    <h2>Peasy Notes</h2>
+  </header>
+  <form>
+    
+  
+  <textarea class="form-control" id="text" rows="15" cols="40"></textarea>
+  <div>
+  <button class="btn btn-primary" id="save">Save</button>
+  </div>
+  </form>
+  <div id="c" class="card">
+    <button id="cp" class="btn btn-primary">Copy</button>
+    <p class="link" id="a">Your link is : <a id="n" href=""></a></p>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    var save = document.getElementById('save')
+var n = document.getElementById('n')
+let domain = location.href
+var cp = document.getElementById('cp')
+
+function work(e) {
+  e.preventDefault()
+  var text = document.getElementById('text').value
+  var n = document.getElementById('n')
+  let enc = window.btoa(text)
+  //console.log(atob(enc))
+  //alert(enc)
+  n.innerText = `${domain}/${enc}`
+  n.href = `${domain}/${enc}`
+}
+
+
+
+const copyToClipboard = () => {
+  var n = document.getElementById('n')
+  let ctext = n.innerText
+  
+  navigator.clipboard.writeText(ctext).then(
+    () => console.log("Copied")
+    )
+}
+
+cp.addEventListener("click", copyToClipboard)
+
+
+save.addEventListener("click", work)
+  </script>
+</body>
+</html>

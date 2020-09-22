@@ -1,0 +1,24 @@
+body {
+    font-size: 15pt;
+    font-family: Monospace;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+}
+
+input, button {
+  margin: 8px;
+}
+
+div {
+  margin: 10px;
+}
+
+li {
+    list-style-type: none;
+    color: red;
+}
