@@ -1,0 +1,17 @@
+{
+  "name": "covid19",
+  "version": "1.0.5",
+  "description": "A web app that displays covid19 data",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ND Josias Aurel",
+  "license": "MIT",
+  "dependencies": {
+    "workbox-sw": "^5.1.2",
+    "logricket": "^1.0.7",
+    "express": "^4.17.1"
+
+  }
+}
