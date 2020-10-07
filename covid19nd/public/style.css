@@ -1,0 +1,44 @@
+body {
+    font-size: 15pt;
+    margin: 5%;
+}
+.foot {
+  text-align: center;
+  font-family: monospace;
+}
+.title {
+  font-family: monospace;
+  font-size: larger;
+  text-align: center;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-title {
+  text-align: center;
+}
+
+
+
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
