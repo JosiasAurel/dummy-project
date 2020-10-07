@@ -1,0 +1,10 @@
+This is a tool (package) that allows to create and manage a single-file database in the form of a JSON file. 
+
+Originally created in nodejs and have ports to Python and some other languages (as soon as possible).
+
+- Makes use of classes and objects
+- Classes have method to instantiate a new dB and client 
+- It has the capability to hash data
+- It wraps shortid in order to create ids for data in the database
+- It may implement moment.js or any other similar library in order to keep timestamps
+- The database file can be encrypted to guard against hackers and malicious software

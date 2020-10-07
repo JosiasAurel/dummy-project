@@ -1,0 +1,10 @@
+Handling POST request in nodejs and Python
+When handling post requests in python flask or Django as well as NodeJS in express or Koa (or any other backend framework)
+
+In flask, use request.get_json(force=True)
+
+In express, use the middleware "app.use(express.json())"
+
+When sending the POST request to your server, specify the MIME type : Content-Type : application/json 
+
+This will help you successfully handle the requests. Good luck now myself . 👍👍👍

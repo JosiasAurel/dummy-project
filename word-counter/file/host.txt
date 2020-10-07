@@ -1,0 +1,13 @@
+Heroku (Full stack)
+Vercel (Full stack - NodeJS && Web)
+
+Repl.it (Full stack)
+Glitch (Full stack - tricky 😏)
+
+Surge (Frontend)
+
+Netlify (Frontend)
+
+Hostman.com (Fullstack) - Paid for Python free for front-end
+
+Glitch.com
